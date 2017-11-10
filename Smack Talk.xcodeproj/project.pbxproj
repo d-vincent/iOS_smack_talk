@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012C631ABB5D70FD2987BC64 /* Pods_Smack_TalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDAA342FFBE74CCF1F060E8A /* Pods_Smack_TalkUITests.framework */; };
+		D7CA49A5AACB83C7D7A82601 /* Pods_Smack_TalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B433D001BF3D7DA847DF9F2 /* Pods_Smack_TalkTests.framework */; };
+		EE83BDD91FB39368009657F9 /* MySmacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDD81FB39368009657F9 /* MySmacksViewController.swift */; };
+		EE83BDDD1FB3B431009657F9 /* BetObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDDC1FB3B431009657F9 /* BetObject.swift */; };
+		EE83BDDF1FB3BF12009657F9 /* MyBetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDDE1FB3BF12009657F9 /* MyBetsViewController.swift */; };
+		EE83BDE11FB3C512009657F9 /* BetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDE01FB3C512009657F9 /* BetTableViewCell.swift */; };
+		EE83BDE31FB4FE62009657F9 /* SearchTeamsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDE21FB4FE62009657F9 /* SearchTeamsViewController.swift */; };
+		EE83BDE51FB5F1CB009657F9 /* TeamSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDE41FB5F1CB009657F9 /* TeamSearchTableViewCell.swift */; };
+		EE83BDE71FB5F2C9009657F9 /* LogoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE83BDE61FB5F2C9009657F9 /* LogoObject.swift */; };
+		EE88D1441F953DA400B64E2D /* MatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE88D1431F953DA400B64E2D /* MatchTableViewCell.swift */; };
+		EE8B2C8C1F97F0710091920C /* LiveGamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B2C8B1F97F0710091920C /* LiveGamesView.swift */; };
+		EE8B2C8F1F97F1930091920C /* WeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE8B2C8E1F97F1930091920C /* WeekView.swift */; };
+		EE978DEC1F9E7842008047BF /* SmackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE978DEB1F9E7842008047BF /* SmackTableViewCell.swift */; };
+		EE978DF01F9FF006008047BF /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE978DEF1F9FF006008047BF /* NewPostViewController.swift */; };
+		EE9B2FFD1F992B2000A1D20C /* ThreadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B2FFC1F992B2000A1D20C /* ThreadViewController.swift */; };
+		EE9B2FFF1F9A4D0800A1D20C /* SmackObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9B2FFE1F9A4D0800A1D20C /* SmackObject.swift */; };
+		EE9C233E1FA8C9CF00C4EC90 /* ReplyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C233D1FA8C9CF00C4EC90 /* ReplyViewController.swift */; };
+		EE9C23401FA8CFAD00C4EC90 /* ReplyObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C233F1FA8CFAD00C4EC90 /* ReplyObject.swift */; };
+		EE9C23421FA9036D00C4EC90 /* ReplyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9C23411FA9036D00C4EC90 /* ReplyTableViewCell.swift */; };
+		EEC4AC5A1FB35E3100B65E56 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC4AC591FB35E3100B65E56 /* ProfileViewController.swift */; };
+		EEDF5ADD1F8FA5ED003855B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5ADC1F8FA5ED003855B9 /* AppDelegate.swift */; };
+		EEDF5ADF1F8FA5ED003855B9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5ADE1F8FA5ED003855B9 /* MainViewController.swift */; };
+		EEDF5AE21F8FA5ED003855B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF5AE01F8FA5ED003855B9 /* Main.storyboard */; };
+		EEDF5AE51F8FA5ED003855B9 /* My_First_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5AE31F8FA5ED003855B9 /* My_First_App.xcdatamodeld */; };
+		EEDF5AE71F8FA5ED003855B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDF5AE61F8FA5ED003855B9 /* Assets.xcassets */; };
+		EEDF5AEA1F8FA5ED003855B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDF5AE81F8FA5ED003855B9 /* LaunchScreen.storyboard */; };
+		EEDF5AF51F8FA5EE003855B9 /* My_First_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5AF41F8FA5EE003855B9 /* My_First_AppTests.swift */; };
+		EEDF5B001F8FA5EE003855B9 /* My_First_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5AFF1F8FA5EE003855B9 /* My_First_AppUITests.swift */; };
+		EEDF5B0E1F8FC615003855B9 /* MatchObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDF5B0D1F8FC615003855B9 /* MatchObject.swift */; };
+		EEDF5B101F90FD09003855B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEDF5B0F1F90FD09003855B9 /* GoogleService-Info.plist */; };
+		FFAD99976E565BC8333DD584 /* Pods_Smack_Talk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65EF76E9F8056F1F26FD9D0 /* Pods_Smack_Talk.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEDF5AF11F8FA5EE003855B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEDF5AD11F8FA5ED003855B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDF5AD81F8FA5ED003855B9;
+			remoteInfo = "My First App";
+		};
+		EEDF5AFC1F8FA5EE003855B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEDF5AD11F8FA5ED003855B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEDF5AD81F8FA5ED003855B9;
+			remoteInfo = "My First App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B433D001BF3D7DA847DF9F2 /* Pods_Smack_TalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_TalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		502EF64BC72991BAB38AE475 /* Pods-Smack TalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack TalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack TalkTests/Pods-Smack TalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		94F803943598A7F9A94E56F6 /* Pods-Smack Talk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack Talk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack Talk/Pods-Smack Talk.debug.xcconfig"; sourceTree = "<group>"; };
+		9B25A0E586B8983C61E4C5B4 /* Pods-Smack Talk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack Talk.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack Talk/Pods-Smack Talk.release.xcconfig"; sourceTree = "<group>"; };
+		B740F9F19C217CE81B544811 /* Pods-Smack TalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack TalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack TalkUITests/Pods-Smack TalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E03F29B6D21D2E2E75D7FA67 /* Pods-Smack TalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack TalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack TalkTests/Pods-Smack TalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E65EF76E9F8056F1F26FD9D0 /* Pods_Smack_Talk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_Talk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE83BDD81FB39368009657F9 /* MySmacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySmacksViewController.swift; sourceTree = "<group>"; };
+		EE83BDDC1FB3B431009657F9 /* BetObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetObject.swift; sourceTree = "<group>"; };
+		EE83BDDE1FB3BF12009657F9 /* MyBetsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBetsViewController.swift; sourceTree = "<group>"; };
+		EE83BDE01FB3C512009657F9 /* BetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetTableViewCell.swift; sourceTree = "<group>"; };
+		EE83BDE21FB4FE62009657F9 /* SearchTeamsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTeamsViewController.swift; sourceTree = "<group>"; };
+		EE83BDE41FB5F1CB009657F9 /* TeamSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSearchTableViewCell.swift; sourceTree = "<group>"; };
+		EE83BDE61FB5F2C9009657F9 /* LogoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoObject.swift; sourceTree = "<group>"; };
+		EE88D1431F953DA400B64E2D /* MatchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchTableViewCell.swift; sourceTree = "<group>"; };
+		EE8B2C8B1F97F0710091920C /* LiveGamesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveGamesView.swift; sourceTree = "<group>"; };
+		EE8B2C8E1F97F1930091920C /* WeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekView.swift; sourceTree = "<group>"; };
+		EE978DEB1F9E7842008047BF /* SmackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackTableViewCell.swift; sourceTree = "<group>"; };
+		EE978DEF1F9FF006008047BF /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		EE9B2FFC1F992B2000A1D20C /* ThreadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadViewController.swift; sourceTree = "<group>"; };
+		EE9B2FFE1F9A4D0800A1D20C /* SmackObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackObject.swift; sourceTree = "<group>"; };
+		EE9C233D1FA8C9CF00C4EC90 /* ReplyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyViewController.swift; sourceTree = "<group>"; };
+		EE9C233F1FA8CFAD00C4EC90 /* ReplyObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyObject.swift; sourceTree = "<group>"; };
+		EE9C23411FA9036D00C4EC90 /* ReplyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyTableViewCell.swift; sourceTree = "<group>"; };
+		EEC4AC591FB35E3100B65E56 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		EEDF5AD91F8FA5ED003855B9 /* Smack Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smack Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDF5ADC1F8FA5ED003855B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEDF5ADE1F8FA5ED003855B9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EEDF5AE11F8FA5ED003855B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEDF5AE41F8FA5ED003855B9 /* My_First_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = My_First_App.xcdatamodel; sourceTree = "<group>"; };
+		EEDF5AE61F8FA5ED003855B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEDF5AE91F8FA5ED003855B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEDF5AEB1F8FA5ED003855B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF5AF01F8FA5EE003855B9 /* Smack TalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack TalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDF5AF41F8FA5EE003855B9 /* My_First_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_AppTests.swift; sourceTree = "<group>"; };
+		EEDF5AF61F8FA5EE003855B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF5AFB1F8FA5EE003855B9 /* Smack TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smack TalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDF5AFF1F8FA5EE003855B9 /* My_First_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_First_AppUITests.swift; sourceTree = "<group>"; };
+		EEDF5B011F8FA5EE003855B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEDF5B0D1F8FC615003855B9 /* MatchObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchObject.swift; sourceTree = "<group>"; };
+		EEDF5B0F1F90FD09003855B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EFC418D94EFC33E8606E3495 /* Pods-Smack TalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack TalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack TalkUITests/Pods-Smack TalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FDAA342FFBE74CCF1F060E8A /* Pods_Smack_TalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smack_TalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEDF5AD61F8FA5ED003855B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAD99976E565BC8333DD584 /* Pods_Smack_Talk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AED1F8FA5EE003855B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7CA49A5AACB83C7D7A82601 /* Pods_Smack_TalkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AF81F8FA5EE003855B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012C631ABB5D70FD2987BC64 /* Pods_Smack_TalkUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		515173F23E1714CDF4AC31CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94F803943598A7F9A94E56F6 /* Pods-Smack Talk.debug.xcconfig */,
+				9B25A0E586B8983C61E4C5B4 /* Pods-Smack Talk.release.xcconfig */,
+				E03F29B6D21D2E2E75D7FA67 /* Pods-Smack TalkTests.debug.xcconfig */,
+				502EF64BC72991BAB38AE475 /* Pods-Smack TalkTests.release.xcconfig */,
+				EFC418D94EFC33E8606E3495 /* Pods-Smack TalkUITests.debug.xcconfig */,
+				B740F9F19C217CE81B544811 /* Pods-Smack TalkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D29C16C852C4BE4E132C11F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E65EF76E9F8056F1F26FD9D0 /* Pods_Smack_Talk.framework */,
+				0B433D001BF3D7DA847DF9F2 /* Pods_Smack_TalkTests.framework */,
+				FDAA342FFBE74CCF1F060E8A /* Pods_Smack_TalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE8B2C8D1F97F0770091920C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE8B2C8B1F97F0710091920C /* LiveGamesView.swift */,
+				EE8B2C8E1F97F1930091920C /* WeekView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		EE978DED1F9E8D61008047BF /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EE978DEF1F9FF006008047BF /* NewPostViewController.swift */,
+				EE9B2FFC1F992B2000A1D20C /* ThreadViewController.swift */,
+				EEDF5ADE1F8FA5ED003855B9 /* MainViewController.swift */,
+				EE9C233D1FA8C9CF00C4EC90 /* ReplyViewController.swift */,
+				EEC4AC591FB35E3100B65E56 /* ProfileViewController.swift */,
+				EE83BDD81FB39368009657F9 /* MySmacksViewController.swift */,
+				EE83BDDE1FB3BF12009657F9 /* MyBetsViewController.swift */,
+				EE83BDE21FB4FE62009657F9 /* SearchTeamsViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		EE978DEE1F9E8D7C008047BF /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF5B0D1F8FC615003855B9 /* MatchObject.swift */,
+				EE9B2FFE1F9A4D0800A1D20C /* SmackObject.swift */,
+				EE9C233F1FA8CFAD00C4EC90 /* ReplyObject.swift */,
+				EE83BDDC1FB3B431009657F9 /* BetObject.swift */,
+				EE83BDE61FB5F2C9009657F9 /* LogoObject.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		EEDF5AD01F8FA5ED003855B9 = {
+			isa = PBXGroup;
+			children = (
+				EEDF5ADB1F8FA5ED003855B9 /* My First App */,
+				EEDF5AF31F8FA5EE003855B9 /* My First AppTests */,
+				EEDF5AFE1F8FA5EE003855B9 /* My First AppUITests */,
+				EEDF5ADA1F8FA5ED003855B9 /* Products */,
+				515173F23E1714CDF4AC31CB /* Pods */,
+				D29C16C852C4BE4E132C11F6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EEDF5ADA1F8FA5ED003855B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF5AD91F8FA5ED003855B9 /* Smack Talk.app */,
+				EEDF5AF01F8FA5EE003855B9 /* Smack TalkTests.xctest */,
+				EEDF5AFB1F8FA5EE003855B9 /* Smack TalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEDF5ADB1F8FA5ED003855B9 /* My First App */ = {
+			isa = PBXGroup;
+			children = (
+				EE978DEE1F9E8D7C008047BF /* Objects */,
+				EE978DED1F9E8D61008047BF /* View Controllers */,
+				EE8B2C8D1F97F0770091920C /* Views */,
+				EEDF5B0F1F90FD09003855B9 /* GoogleService-Info.plist */,
+				EEDF5ADC1F8FA5ED003855B9 /* AppDelegate.swift */,
+				EEDF5AE01F8FA5ED003855B9 /* Main.storyboard */,
+				EEDF5AE61F8FA5ED003855B9 /* Assets.xcassets */,
+				EEDF5AE81F8FA5ED003855B9 /* LaunchScreen.storyboard */,
+				EEDF5AEB1F8FA5ED003855B9 /* Info.plist */,
+				EEDF5AE31F8FA5ED003855B9 /* My_First_App.xcdatamodeld */,
+				EE88D1431F953DA400B64E2D /* MatchTableViewCell.swift */,
+				EE978DEB1F9E7842008047BF /* SmackTableViewCell.swift */,
+				EE9C23411FA9036D00C4EC90 /* ReplyTableViewCell.swift */,
+				EE83BDE01FB3C512009657F9 /* BetTableViewCell.swift */,
+				EE83BDE41FB5F1CB009657F9 /* TeamSearchTableViewCell.swift */,
+			);
+			path = "My First App";
+			sourceTree = "<group>";
+		};
+		EEDF5AF31F8FA5EE003855B9 /* My First AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF5AF41F8FA5EE003855B9 /* My_First_AppTests.swift */,
+				EEDF5AF61F8FA5EE003855B9 /* Info.plist */,
+			);
+			path = "My First AppTests";
+			sourceTree = "<group>";
+		};
+		EEDF5AFE1F8FA5EE003855B9 /* My First AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF5AFF1F8FA5EE003855B9 /* My_First_AppUITests.swift */,
+				EEDF5B011F8FA5EE003855B9 /* Info.plist */,
+			);
+			path = "My First AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEDF5AD81F8FA5ED003855B9 /* Smack Talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDF5B041F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack Talk" */;
+			buildPhases = (
+				763D31DC79A7C6C6B752375E /* [CP] Check Pods Manifest.lock */,
+				EEDF5AD51F8FA5ED003855B9 /* Sources */,
+				EEDF5AD61F8FA5ED003855B9 /* Frameworks */,
+				EEDF5AD71F8FA5ED003855B9 /* Resources */,
+				37EB65F4A1902F2010B64C49 /* [CP] Embed Pods Frameworks */,
+				E1718AE4C843A283435AFF51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smack Talk";
+			productName = "My First App";
+			productReference = EEDF5AD91F8FA5ED003855B9 /* Smack Talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEDF5AEF1F8FA5EE003855B9 /* Smack TalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDF5B071F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack TalkTests" */;
+			buildPhases = (
+				527463659415706F8EC6853D /* [CP] Check Pods Manifest.lock */,
+				EEDF5AEC1F8FA5EE003855B9 /* Sources */,
+				EEDF5AED1F8FA5EE003855B9 /* Frameworks */,
+				EEDF5AEE1F8FA5EE003855B9 /* Resources */,
+				5ED144D0A8F9F317D32F74D7 /* [CP] Embed Pods Frameworks */,
+				796E431237215C0D6B3255B9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEDF5AF21F8FA5EE003855B9 /* PBXTargetDependency */,
+			);
+			name = "Smack TalkTests";
+			productName = "My First AppTests";
+			productReference = EEDF5AF01F8FA5EE003855B9 /* Smack TalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEDF5AFA1F8FA5EE003855B9 /* Smack TalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDF5B0A1F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack TalkUITests" */;
+			buildPhases = (
+				C382EC0B0C9D8969C61D9EEA /* [CP] Check Pods Manifest.lock */,
+				EEDF5AF71F8FA5EE003855B9 /* Sources */,
+				EEDF5AF81F8FA5EE003855B9 /* Frameworks */,
+				EEDF5AF91F8FA5EE003855B9 /* Resources */,
+				808364E063598247743BE707 /* [CP] Embed Pods Frameworks */,
+				1311D900805B1CD11240034D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEDF5AFD1F8FA5EE003855B9 /* PBXTargetDependency */,
+			);
+			name = "Smack TalkUITests";
+			productName = "My First AppUITests";
+			productReference = EEDF5AFB1F8FA5EE003855B9 /* Smack TalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEDF5AD11F8FA5ED003855B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Drew McDonald";
+				TargetAttributes = {
+					EEDF5AD81F8FA5ED003855B9 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = XN65T4EY66;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+					};
+					EEDF5AEF1F8FA5EE003855B9 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EEDF5AD81F8FA5ED003855B9;
+					};
+					EEDF5AFA1F8FA5EE003855B9 = {
+						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EEDF5AD81F8FA5ED003855B9;
+					};
+				};
+			};
+			buildConfigurationList = EEDF5AD41F8FA5ED003855B9 /* Build configuration list for PBXProject "Smack Talk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEDF5AD01F8FA5ED003855B9;
+			productRefGroup = EEDF5ADA1F8FA5ED003855B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEDF5AD81F8FA5ED003855B9 /* Smack Talk */,
+				EEDF5AEF1F8FA5EE003855B9 /* Smack TalkTests */,
+				EEDF5AFA1F8FA5EE003855B9 /* Smack TalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEDF5AD71F8FA5ED003855B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF5AEA1F8FA5ED003855B9 /* LaunchScreen.storyboard in Resources */,
+				EEDF5B101F90FD09003855B9 /* GoogleService-Info.plist in Resources */,
+				EEDF5AE71F8FA5ED003855B9 /* Assets.xcassets in Resources */,
+				EEDF5AE21F8FA5ED003855B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AEE1F8FA5EE003855B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AF91F8FA5EE003855B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1311D900805B1CD11240034D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack TalkUITests/Pods-Smack TalkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37EB65F4A1902F2010B64C49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Smack Talk/Pods-Smack Talk-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack Talk/Pods-Smack Talk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527463659415706F8EC6853D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smack TalkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED144D0A8F9F317D32F74D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack TalkTests/Pods-Smack TalkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		763D31DC79A7C6C6B752375E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smack Talk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		796E431237215C0D6B3255B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack TalkTests/Pods-Smack TalkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		808364E063598247743BE707 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack TalkUITests/Pods-Smack TalkUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C382EC0B0C9D8969C61D9EEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Smack TalkUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1718AE4C843A283435AFF51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Smack Talk/Pods-Smack Talk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEDF5AD51F8FA5ED003855B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE83BDDF1FB3BF12009657F9 /* MyBetsViewController.swift in Sources */,
+				EE83BDE31FB4FE62009657F9 /* SearchTeamsViewController.swift in Sources */,
+				EE978DF01F9FF006008047BF /* NewPostViewController.swift in Sources */,
+				EE9C23401FA8CFAD00C4EC90 /* ReplyObject.swift in Sources */,
+				EE9C23421FA9036D00C4EC90 /* ReplyTableViewCell.swift in Sources */,
+				EE83BDE11FB3C512009657F9 /* BetTableViewCell.swift in Sources */,
+				EE9B2FFF1F9A4D0800A1D20C /* SmackObject.swift in Sources */,
+				EE83BDE51FB5F1CB009657F9 /* TeamSearchTableViewCell.swift in Sources */,
+				EE978DEC1F9E7842008047BF /* SmackTableViewCell.swift in Sources */,
+				EE83BDE71FB5F2C9009657F9 /* LogoObject.swift in Sources */,
+				EE83BDDD1FB3B431009657F9 /* BetObject.swift in Sources */,
+				EE8B2C8F1F97F1930091920C /* WeekView.swift in Sources */,
+				EEDF5B0E1F8FC615003855B9 /* MatchObject.swift in Sources */,
+				EE88D1441F953DA400B64E2D /* MatchTableViewCell.swift in Sources */,
+				EEDF5AE51F8FA5ED003855B9 /* My_First_App.xcdatamodeld in Sources */,
+				EE9C233E1FA8C9CF00C4EC90 /* ReplyViewController.swift in Sources */,
+				EE9B2FFD1F992B2000A1D20C /* ThreadViewController.swift in Sources */,
+				EE8B2C8C1F97F0710091920C /* LiveGamesView.swift in Sources */,
+				EEC4AC5A1FB35E3100B65E56 /* ProfileViewController.swift in Sources */,
+				EEDF5ADF1F8FA5ED003855B9 /* MainViewController.swift in Sources */,
+				EE83BDD91FB39368009657F9 /* MySmacksViewController.swift in Sources */,
+				EEDF5ADD1F8FA5ED003855B9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AEC1F8FA5EE003855B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF5AF51F8FA5EE003855B9 /* My_First_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEDF5AF71F8FA5EE003855B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF5B001F8FA5EE003855B9 /* My_First_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEDF5AF21F8FA5EE003855B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEDF5AD81F8FA5ED003855B9 /* Smack Talk */;
+			targetProxy = EEDF5AF11F8FA5EE003855B9 /* PBXContainerItemProxy */;
+		};
+		EEDF5AFD1F8FA5EE003855B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEDF5AD81F8FA5ED003855B9 /* Smack Talk */;
+			targetProxy = EEDF5AFC1F8FA5EE003855B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EEDF5AE01F8FA5ED003855B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDF5AE11F8FA5ED003855B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEDF5AE81F8FA5ED003855B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDF5AE91F8FA5ED003855B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEDF5B021F8FA5EE003855B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEDF5B031F8FA5EE003855B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEDF5B051F8FA5EE003855B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94F803943598A7F9A94E56F6 /* Pods-Smack Talk.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN65T4EY66;
+				INFOPLIST_FILE = "My First App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uda.smacktalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EEDF5B061F8FA5EE003855B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B25A0E586B8983C61E4C5B4 /* Pods-Smack Talk.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XN65T4EY66;
+				INFOPLIST_FILE = "My First App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uda.smacktalk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		EEDF5B081F8FA5EE003855B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E03F29B6D21D2E2E75D7FA67 /* Pods-Smack TalkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "My First AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UDA-Technologies.My-First-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smack Talk.app/Smack Talk";
+			};
+			name = Debug;
+		};
+		EEDF5B091F8FA5EE003855B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 502EF64BC72991BAB38AE475 /* Pods-Smack TalkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "My First AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UDA-Technologies.My-First-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smack Talk.app/Smack Talk";
+			};
+			name = Release;
+		};
+		EEDF5B0B1F8FA5EE003855B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC418D94EFC33E8606E3495 /* Pods-Smack TalkUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "My First AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UDA-Technologies.My-First-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "My First App";
+			};
+			name = Debug;
+		};
+		EEDF5B0C1F8FA5EE003855B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B740F9F19C217CE81B544811 /* Pods-Smack TalkUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "My First AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "UDA-Technologies.My-First-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "My First App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEDF5AD41F8FA5ED003855B9 /* Build configuration list for PBXProject "Smack Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF5B021F8FA5EE003855B9 /* Debug */,
+				EEDF5B031F8FA5EE003855B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEDF5B041F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF5B051F8FA5EE003855B9 /* Debug */,
+				EEDF5B061F8FA5EE003855B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEDF5B071F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack TalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF5B081F8FA5EE003855B9 /* Debug */,
+				EEDF5B091F8FA5EE003855B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEDF5B0A1F8FA5EE003855B9 /* Build configuration list for PBXNativeTarget "Smack TalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDF5B0B1F8FA5EE003855B9 /* Debug */,
+				EEDF5B0C1F8FA5EE003855B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEDF5AE31F8FA5ED003855B9 /* My_First_App.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEDF5AE41F8FA5ED003855B9 /* My_First_App.xcdatamodel */,
+			);
+			currentVersion = EEDF5AE41F8FA5ED003855B9 /* My_First_App.xcdatamodel */;
+			path = My_First_App.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EEDF5AD11F8FA5ED003855B9 /* Project object */;
+}
