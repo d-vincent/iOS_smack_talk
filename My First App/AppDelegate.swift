@@ -10,6 +10,9 @@ import UIKit
 import CoreData
 import Firebase
 import IQKeyboardManagerSwift
+import Fabric
+import Crashlytics
+
 
 
 @UIApplicationMain
@@ -23,7 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         FirebaseApp.configure()
         IQKeyboardManager.sharedManager().enable = true
-        
+        Fabric.with([Crashlytics.self])
+
 //        self.window = UIWindow(frame: UIScreen.mainScreen.bounds)
 //        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 //        var initialViewController: UIViewController

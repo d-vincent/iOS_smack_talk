@@ -19,7 +19,12 @@ class ThreadViewController: UIViewController,  UITableViewDelegate, UITableViewD
     var profileId = ""
     var smacks = [SmackObject]()
 
+    @IBOutlet weak var awayLogo: UIImageView!
     @IBOutlet weak var smacksTableView: UITableView!
+    @IBOutlet weak var homeLogo: UIImageView!
+    @IBOutlet weak var awayScoreLabel: UILabel!
+    @IBOutlet weak var homeScoreLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     
     
     @IBAction func goToPostScreen(sender: UIBarButtonItem){
@@ -49,6 +54,71 @@ class ThreadViewController: UIViewController,  UITableViewDelegate, UITableViewD
         weak var weakSelf = self
         
         ref = Database.database().reference()
+        
+        ref.child("archive").child(gameId).observeSingleEvent(of: DataEventType.value, with: {(snapshot) in
+            
+            if (snapshot.exists()){
+                
+                let homeScoreSnap = snapshot.childSnapshot(forPath: "homeScore")
+                if (homeScoreSnap.exists()){
+                    var homeScore = homeScoreSnap.value as! UInt64
+                    weakSelf?.homeScoreLabel.text = String(homeScoreSnap.value as! UInt64)
+                }else {
+                    weakSelf?.homeScoreLabel.text = "0"
+                }
+                
+                let awayScoreSnap = snapshot.childSnapshot(forPath: "awayScore")
+                if (awayScoreSnap.exists()){
+                    var awayScore = awayScoreSnap.value as! UInt64
+                    weakSelf?.awayScoreLabel.text = String(awayScoreSnap.value as! UInt64)
+                }else {
+                    weakSelf?.awayScoreLabel.text = "0"
+                }
+                
+                let awayId = snapshot.childSnapshot(forPath: "awayId").value as! UInt64
+                let homeId = snapshot.childSnapshot(forPath: "homeId").value as! UInt64
+                
+                weakSelf?.awayLogo.image = UIImage (named: "logo_" + String(awayId))
+
+                weakSelf?.homeLogo.image = UIImage (named: "logo_" + String(homeId))
+                
+                weakSelf?.timeLabel.text = "0:00"
+                
+            }else {
+                weakSelf?.ref.child("games").child((weakSelf?.gameId)!).observe(DataEventType.value, with: {(gamesnap) in
+                    
+                    let homeScoreSnap = gamesnap.childSnapshot(forPath: "homeScore")
+                    if (homeScoreSnap.exists()){
+                        weakSelf?.homeScoreLabel.text = homeScoreSnap.value as? String
+                    }else {
+                        weakSelf?.homeScoreLabel.text = "0"
+                    }
+                    
+                    let awayScoreSnap = gamesnap.childSnapshot(forPath: "awayScore")
+                    if (awayScoreSnap.exists()){
+                        weakSelf?.awayScoreLabel.text = awayScoreSnap.value as? String
+                    }else {
+                        weakSelf?.awayScoreLabel.text = "0"
+                    }
+                    
+                    let awayId = gamesnap.childSnapshot(forPath: "awayId").value as! UInt64
+                    let homeId = gamesnap.childSnapshot(forPath: "homeId").value as! UInt64
+                    
+                    weakSelf?.awayLogo.image = UIImage (named: "logo_" + String(awayId))
+                    
+                    weakSelf?.homeLogo.image = UIImage (named: "logo_" + String(homeId))
+                    
+                
+                    weakSelf?.timeLabel.text = "0:00"
+                    
+                    
+                    
+                })
+                
+            }
+            
+            
+        })
 
         ref.child("smacks").queryOrdered(byChild: "threadId").queryEqual(toValue: gameId).observe(DataEventType.childAdded) { (snapshot) in
 
@@ -105,10 +175,20 @@ class ThreadViewController: UIViewController,  UITableViewDelegate, UITableViewD
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if (sender is UIBarButtonItem){
+           
+            if ((sender as! UIBarButtonItem).tag == 0){
+                
+                let guest = segue.destination as! PlaceBetViewController
+                guest.gameId = gameId
+                guest.profileId = profileId
+                
+            }else {
+                let guest = segue.destination as! NewPostViewController
+                
+                guest.gameId = gameId
+            }
             
-            let guest = segue.destination as! NewPostViewController
             
-            guest.gameId = gameId
         } else if (sender is UIButton){
             let guest = segue.destination as! ReplyViewController
             

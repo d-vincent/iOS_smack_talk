@@ -75,15 +75,18 @@ class SearchTeamsViewController: UIViewController, UISearchBarDelegate, UITableV
         
     }
 
-    /*
-    // MARK: - Navigation
+    
+   
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let path = self.teamSearchTableView.indexPathForSelectedRow?.row
+        (segue.destination as! PastGamesViewController).teamId = Int((foundTeams[path!]).id!)
+        
     }
-    */
+    
+    
+
     
     func foundLogosSearch(_ listToSearch: [LogoObject], searchTerm: String ) -> [LogoObject]{
         
@@ -117,5 +120,6 @@ class SearchTeamsViewController: UIViewController, UISearchBarDelegate, UITableV
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return foundTeams.count
     }
+    
 
 }

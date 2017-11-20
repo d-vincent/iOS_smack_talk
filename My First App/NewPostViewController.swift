@@ -25,7 +25,7 @@ class NewPostViewController: UIViewController {
          return
         }
         
-      ref.child("profiles").child(profileId).child("lastSmackTime").observe(DataEventType.value) { (snapshot) in
+        ref.child("profiles").child(profileId).child("lastSmackTime").observeSingleEvent( of: DataEventType.value) { (snapshot) in
             var isTooSoon = false
             
             if (snapshot.exists()){
@@ -41,23 +41,38 @@ class NewPostViewController: UIViewController {
             }
             else {
                 var smackMap = [String : Any]()
+                
+                self.ref.child("profiles").child(self.profileId).child("username").observeSingleEvent(of: DataEventType.value, with: {(snapshot) in
+                    
+                    if (snapshot.exists()){
+                        smackMap["username"] = (snapshot.value as! String)
+                    }
+                    
+                    smackMap["content"] = self.newPostContent.text
+                    smackMap["timestamp"] = Date().toMillis()
+                    smackMap["voteCount"] = 1
+                    smackMap["replyCount"] = 0
+                    smackMap["authorId"] = self.profileId
+                    smackMap["threadId"] = self.gameId
+                    
+                    let smackId = self.ref.child("smacks").childByAutoId().key
+                    
+                    self.ref.child("smacks").child(smackId).setValue(smackMap)
+                    self.ref.child("threads").child(self.gameId).child("smacks").child(smackId).setValue(true)
+                    self.ref.child("profiles").child(self.profileId).child("smacks").child(smackId).setValue(true)
+                    self.ref.child("profiles").child(self.profileId).child("votes").child(smackId).setValue(1)
+                    self.ref.child("profiles").child(self.profileId).child("lastSmackTime").setValue(Date().toMillis())
+                    
+                    self.navigationController?.popViewController(animated: true)                                                                            
+                    
+                    
+                    
+                    
+                })
+                
+                
             
-                smackMap["content"] = self.newPostContent.text
-                smackMap["timestamp"] = Date().toMillis()
-                smackMap["voteCount"] = 1
-                smackMap["replyCount"] = 0
-                smackMap["authorId"] = self.profileId
-                smackMap["threadId"] = self.gameId
                 
-                let smackId = self.ref.child("smacks").childByAutoId().key
-                
-                self.ref.child("smacks").child(smackId).setValue(smackMap)
-                self.ref.child("threads").child(self.gameId).child("smacks").child(smackId).setValue(true)
-                self.ref.child("profiles").child(self.profileId).child("smacks").child(smackId).setValue(true)
-                self.ref.child("profiles").child(self.profileId).child("votes").child(smackId).setValue(1)
-                self.ref.child("profiles").child(self.profileId).child("lastSmackTime").setValue(Date().toMillis())
-                
-                self.navigationController?.popViewController(animated: true)
                 
             }
         }
@@ -93,6 +108,7 @@ class NewPostViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     
